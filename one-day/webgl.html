@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvas" height="400" width="400"></canvas>
+</body>
+
+<script>
+  const ctx = document.getElementById("canvas");
+  // 获取绘图上下文
+  const gl = ctx.getContext("webgl");
+  // 清空canvas color 接受4个参数 red green blue  alpha 透明度 
+  // 相当于设置颜色
+  gl.clearColor(1.0,0.0,0.0,1.0);
+  // 清空颜色缓冲 DEPTH 深度
+  gl.clear(gl.COLOR_BUFFER_BIT)
+  // 
+</script>
+</html>
